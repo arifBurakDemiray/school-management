@@ -43,15 +43,6 @@ namespace SchoolManagement.API.Controllers{
             return NoContent();
 
         }
-        /*                 [HttpGet]
-                [Route("users")]
-                public ActionResult<IEnumerable<UserDTO>> GetAllUsers()
-                {
-                    var users = _repository.GetAll();
-                    if(users!=null){
-                        return Ok(_mapper.Map<IEnumerable<UserDTO>>(users)); }
-                    return NotFound();
-                } */
         [HttpGet]
         [Route("roles")]
         public async Task<List<Role>> GetAllRoles()
@@ -73,13 +64,7 @@ namespace SchoolManagement.API.Controllers{
             //return await Task<IActionResult>.CompletedTask.GetAwaiter();
 
         }
-        //[HttpPost]
-        //[Route("role")]
-        //public void CreateRole(Role roleCreate)
-        //{
-        //    _rrepository.Add(roleCreate);
-        //    _rrepository.SaveChanges();
-        //}
+
         [HttpPost]
         [Route("user")]
         public void CreateUser(UserCreateDTO userCreateDTO){
