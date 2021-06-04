@@ -20,10 +20,7 @@ namespace SchoolManagement.API.Models {
         public string PhoneNumber { get; set; }
 
         public string Email { get; set; }
-        
-        [MaxLength(450)]
-        public string SSN { get; set; }
-        
+           
         [ForeignKey("Role")]
         public int RoleId { get; set; }
 
@@ -34,7 +31,6 @@ namespace SchoolManagement.API.Models {
             Name = userDTO.Name;
             Surname = userDTO.Surname;
             PhoneNumber = userDTO.PhoneNumber;
-            SSN = userDTO.SSN;
         }
     }
 }
