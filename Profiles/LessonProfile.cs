@@ -17,9 +17,6 @@ namespace SchoolManagement.API.Profiles {
             //CreateMap<Student, StudentDTO>();
             //CreateMap<Lesson,LessonDTO>();
             //CreateMap<LessonDTO, Lesson>();
-            /* CreateMap<CommandCreateDto, Command>();
-            CreateMap<CommandUpdateDto, Command>();
-            CreateMap<Command, CommandUpdateDto>(); */
         }
     }
 }
